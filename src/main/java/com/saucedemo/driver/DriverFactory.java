@@ -34,7 +34,7 @@ public class DriverFactory {
                 driver = new FirefoxDriver(firefoxOptions);
 
         }
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Integer.parseInt(ConfigReader.get("implicit.wait"))));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(ConfigReader.get("implicit.wait"))));
         driverThread.set(driver);
     }
     public static WebDriver getDriver(){
