@@ -8,10 +8,10 @@ import org.testng.annotations.Test;
 
 public class LoginPageTest extends BaseTest {
 
-    @Test(description = "Login with valid credentials",priority = 0,enabled = false)
+    @Test(description = "Login with valid credentials",priority = 0,enabled = true)
     public void testLoginWithValidCredentials(){
-        System.out.println(JsonReader.get("validCredentials.username"));
         pages().getLoginPage().logIn(JsonReader.get("validCredentials.username"),JsonReader.get("validCredentials.password"));
+        Assert.assertEquals(pages().getProductPage().getHeading(),JsonReader.get("pageInformation.productPageHeading"));
     }
     @Test(description = "Login with invalid credentials",priority = 1)
     public void testLoginWithInValidCredentials(){

@@ -1,6 +1,6 @@
 package com.saucedemo.manager;
-
 import com.saucedemo.pages.LoginPage;
+import com.saucedemo.pages.ProductPage;
 import org.openqa.selenium.WebDriver;
 
 public class PageObjectManager {
@@ -12,5 +12,8 @@ public class PageObjectManager {
 
     public LoginPage getLoginPage(){
         return new LoginPage(driver);
+    }
+    public ProductPage getProductPage(){
+        return new ProductPage(driver);
     }
 }

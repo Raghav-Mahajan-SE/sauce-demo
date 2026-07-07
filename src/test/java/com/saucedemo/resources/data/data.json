@@ -9,5 +9,10 @@
   },
   "errorMsgs": {
     "invalid_pwd": "Epic sadface: Username and password do not match any user in this service"
+  },
+  "pageInformation": {
+    "productPageHeading": "Products",
+    "noOfProducts": 6
   }
+
 }
