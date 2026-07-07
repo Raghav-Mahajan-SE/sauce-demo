@@ -41,7 +41,7 @@ public class DriverFactory {
         return driverThread.get();
     }
 
-    public void quitBrowser(){
+    public static void quitDriver(){
         if(driverThread.get()!=null){
             driverThread.get().quit();
             driverThread.remove();
