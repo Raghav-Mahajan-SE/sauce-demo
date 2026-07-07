@@ -20,8 +20,8 @@ public class BasePage {
     public void click(By locator){
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
-    public void getText(By locator){
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
+    public String getText(By locator){
+        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator)).getText();
     }
     public void type(By locator,String value){
         element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));

@@ -9,6 +9,7 @@ public class LoginPage extends BasePage {
     private final By username = By.id("user-name");
     private final By userPwd = By.id("password");
     private final By loginBtn = By.id("login-button");
+    private final By invalidLoginMsg = By.cssSelector("[data-test='error']");
 
     public LoginPage(WebDriver driver){
         super(driver);
@@ -19,6 +20,10 @@ public class LoginPage extends BasePage {
         type(userPwd,password);
         click(loginBtn);
     }
+    public String errorMsg(){
+        return getText(invalidLoginMsg);
+    }
+
 
 
 

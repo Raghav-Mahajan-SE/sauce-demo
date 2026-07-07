@@ -21,6 +21,7 @@
         <!-- Dependency versions -->
         <selenium.version>4.25.0</selenium.version>
         <testng.version>7.10.2</testng.version>
+        <jackson.version>2.18.2</jackson.version>
         <!-- Plugin versions -->
         <surefire.version>3.2.5</surefire.version>
     </properties>
@@ -39,6 +40,13 @@
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Jackson — JSON test-data parsing -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
     </dependencies>
 
