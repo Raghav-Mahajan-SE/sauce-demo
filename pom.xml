@@ -22,6 +22,7 @@
         <selenium.version>4.25.0</selenium.version>
         <testng.version>7.10.2</testng.version>
         <jackson.version>2.18.2</jackson.version>
+        <extent.version>5.1.2</extent.version>
         <!-- Plugin versions -->
         <surefire.version>3.2.5</surefire.version>
     </properties>
@@ -47,6 +48,13 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
             <version>${jackson.version}</version>
+        </dependency>
+
+        <!-- ExtentReports — HTML test reporting -->
+        <dependency>
+            <groupId>com.aventstack</groupId>
+            <artifactId>extentreports</artifactId>
+            <version>${extent.version}</version>
         </dependency>
     </dependencies>
 

@@ -32,3 +32,7 @@ target/
 
 # TestNG output
 test-output/
+
+# Generated reports and screenshots
+reports/
+screenshots/

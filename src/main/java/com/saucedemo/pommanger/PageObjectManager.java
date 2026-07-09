@@ -1,4 +1,4 @@
-package com.saucedemo.manager;
+package com.saucedemo.pommanger;
 import com.saucedemo.pages.LoginPage;
 import com.saucedemo.pages.ProductPage;
 import org.openqa.selenium.WebDriver;
