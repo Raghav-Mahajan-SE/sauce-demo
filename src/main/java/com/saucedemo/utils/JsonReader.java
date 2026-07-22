@@ -9,7 +9,7 @@ public class JsonReader {
 
     private static JsonNode root;
 
-    public static String get(String path){
+    public static JsonNode getNode(String path){
         if(root == null){
             try {
                 root = new ObjectMapper().readTree(new File(ConfigReader.get("test.data.file")));
@@ -21,6 +21,10 @@ public class JsonReader {
         for(String key : path.split("\\.")){
             node = node.get(key);
         }
-        return node.asText();
+        return node;
+    }
+
+    public static String get(String path){
+        return getNode(path).asText();
     }
 }
